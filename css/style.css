@@ -1,0 +1,111 @@
+
+:root {
+    --mainColor: #161617;
+    --fontColor: #a6ff0099;
+    --secBgColor: #252525;
+    --secBorderCol: #6d6565;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Unbounded", sans-serif;
+    color: var(--fontColor);
+    background-color: var(--mainColor);
+}
+
+
+.container {
+    background-color: var(--mainColor);
+    padding: 10px;
+}
+
+
+.container .title {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid var(--fontColor);
+    border-radius: 10px;
+
+}
+
+.container .title span {
+    color: white;
+}
+
+.training {
+    background-color: var(--secBgColor);
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.training h2 {
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    border:1px dashed var(--fontColor);
+}
+
+.training .card {
+    width: 400px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.training .card .image {
+    width: 100%;
+}
+
+.training .card .image img {
+    width: 100%;
+    border-bottom: 1px solid var(--secBorderCol);
+}
+
+
+.training .card p {
+    margin: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .training .title h1 {
+        font-size: 4.4rem;
+    }
+
+    .training .card p {
+        color: #aca1a1;
+        font-weight: 300;
+    }
+
+    .training .card {
+        width: 320px;
+        transition: 0.3s;
+    }
+
+    .training .card:hover {
+        transform: scale(1.03);
+        background-color: #016301;
+    }
+
+
+}
